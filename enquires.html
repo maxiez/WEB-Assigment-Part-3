@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries | Ask About Our Free Courses and Volunteering</title>
+    <meta name="description" content="Ask about a free CodeMzansi course and see straight away what it costs and how many seats are available. Volunteers and supporters are welcome too.">
+    <meta name="keywords" content="CodeMzansi enquiry, free computer course, volunteer South Africa, e-waste recycling, community clean-up">
+    <meta name="author" content="CodeMzansi">
+    <link rel="stylesheet" href="css_assets/mystyle.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquires.html" class="active">Enquiries</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contacts.html">Contact us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Enquiries</h1>
+
+    <h2>More information about us</h2>
+    <p class="box green">Because of our love for technology and computers, we occasionally travel around our home country, South Africa. We visit local parks and the sides of highways to clean the streets, making our environment clean and beautiful and recycling the trash. We also raise awareness of pollution and how it affects the world and us living in it. We educate the youth about e-waste (any discarded electrical or electronic device), the dangers of e-waste and how to reduce it, because it is becoming a major issue that does not get the attention it deserves.</p>
+
+    <img src="_Images/ewaste-recycling-bin-full-of-electronics.webp" alt="Green recycling bin overflowing with discarded electronic devices" class="centered-image" width="172" height="180">
+
+    <p>We urge everybody to stand up and help us make a real change in our world. Please volunteer, bring your family and friends and help us clean the streets of South Africa.</p>
+
+    <img src="https://th.bing.com/th/id/OIP.lvKzJYdAXQjx7wUts5ndMgAAAA?w=238&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="CodeMzansi volunteers cleaning up together" class="centered-image">
+
+    <h2>Ask about a course</h2>
+    <p>Fill in the form to see the cost and availability of a course. All fields marked * are required.</p>
+
+    <form id="enquiryForm" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+        <label for="fullName">Full name *</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email address *</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label for="phone">Phone number * (for example 078 827 6619)</label>
+        <input type="tel" id="phone" name="phone" required>
+        <span class="error" id="phoneError"></span>
+
+        <label for="service">Which course are you interested in? *</label>
+        <select id="service" name="service" required>
+            <option value="">Choose a course...</option>
+        </select>
+        <span class="error" id="serviceError"></span>
+
+        <label for="people">How many people will attend? *</label>
+        <input type="number" id="people" name="people" min="1" max="50" required>
+        <span class="error" id="peopleError"></span>
+
+        <label for="message">Message (optional, up to 300 characters)</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <span class="error" id="messageError"></span>
+
+        <label><input type="checkbox" id="agree" name="agree"> I agree that CodeMzansi can contact me about this enquiry *</label>
+        <span class="error" id="agreeError"></span>
+
+        <button type="submit">Send enquiry</button>
+    </form>
+
+    <div id="response" class="response"></div>
+</main>
+
+<footer>
+    <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="enquires.html">Enquiries</a> | <a href="gallery.html">Gallery</a> | <a href="contacts.html">Contact us</a></p>
+    <p>&copy; 2026 CodeMzansi. Email <a href="mailto:maxcatgr11@gmail.com">maxcatgr11@gmail.com</a> or call 078 827 6619.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="jsassets/myfirstscript.js"></script>
+</body>
+</html>
